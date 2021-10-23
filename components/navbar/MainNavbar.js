@@ -7,7 +7,7 @@ import OnlineComponent from '../common/OnlineComponent';
 const MainNavbar = () => {
     return (
         <aside className="h-screen w-[76px] flex-none py-2 top-0 sticky">
-            <div className="flex flex-col justify-between h-full bg-white border border-gray-50 rounded-lg py-2">
+            <div className="flex flex-col justify-between h-full bg-white border border-gray-100 rounded-lg py-2">
             
                 <nav className="flex-1 w-full">
                     <ul className="flex flex-col space-y-2 justify-center">

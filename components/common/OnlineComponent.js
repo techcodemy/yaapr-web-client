@@ -9,7 +9,7 @@ const OnlineComponent = ({isOnlineState}) => {
 
     }, [isOnlineState])
     return (
-        <span className={`border-2 border-white h-3 w-3 rounded-full  absolute bottom-0 right-0 mr-1 mb-1 ${isOnline ? 'bg-green-500':'bg-red-500'}`}></span>
+        <span className={`border-2 border-white h-3 w-3 rounded-full  absolute bottom-0 right-0 ${isOnline ? 'bg-green-500':'bg-red-500'}`}></span>
     )
 }
 

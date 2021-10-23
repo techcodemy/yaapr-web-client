@@ -87,7 +87,7 @@ img {
   }
 
   .input--control-noerr{
-    @apply border-gray-50 ;
+    @apply border-gray-100 ;
   }
 
   .input--control-label{

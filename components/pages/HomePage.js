@@ -46,8 +46,9 @@ const HomePage = () => {
         <main className="flex flex-row w-full space-x-2">
             <UsersChatBar />
             <section className="flex-1 flex flex-col py-2">
+
                 <header className="relative h-12 ">
-                    <div className="absolute w-full">
+                    <div className="absolute w-full top-0">
                         <form className="shadow-sm rounded-lg relative">
                             <span className="w-12 h-full absolute flex justify-center items-center">
                                 <SearchRoundedIcon style={{fontSize:22}} className="text-gray-400" />
@@ -56,7 +57,8 @@ const HomePage = () => {
                         </form>
                     </div>
                 </header>
-                <div className="mt-2 py-4 bg-white rounded-lg border border-gray-50">
+
+                <div className="mt-2 py-4 bg-white rounded-lg border border-gray-100">
                     <ul className="flex flex-row space-x-4 ">
                         {companies.map(item => 
                             <li key={item.id} className="w-1/6 flex justify-center ">
@@ -88,7 +90,7 @@ const HomePage = () => {
                                     <div className="w-12 flex-none">
                                         <img src={`./logos/${item.logo}`} className="h-12 w-12 object-cover rounded-full shadow-sm" alt="" />
                                     </div>
-                                    <div className="flex-1 flex flex-col justify-between bg-white rounded-lg py-2 px-4">
+                                    <div className="flex-1 flex flex-col justify-between bg-white border border-gray-100 rounded-lg py-2 px-4">
                                         <div className="flex items-center justify-between">
                                             <div className="flex items-start space-x-1">
                                                 <div className="capitalize text-gray-800 font-semibold">
