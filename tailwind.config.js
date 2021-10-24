@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   purge: [
@@ -10,11 +12,19 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'brand-bg':'#E1FFDB',
-        /* 'brand':'#16E07F', */
-        'brand':'#02EBBC',
+        gray: colors.coolGray,
+        'primary':{
+          'lighter':'#5316fc',
+          'light':'#4d12f0',
+          'base':'#6A4CFF',
+          'dark':'#410ad8',
+          'darker':'#3f05dd',
+          'darkest':'#3200bd',
+        },
       },
       screens: {
+        'xxl': '1366px',
+        '2xl': '1536px',
         '3xl': '1680px',
         '4xl': '1920px',
       },

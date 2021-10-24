@@ -8,11 +8,11 @@ const LayoutWrapper = ({children,pageInfo,pageMetaInfo}) => {
     const router = useRouter() 
    /*  useDarkMode() */
     return (
-        <div className="bg-gray-50">
+        <div>
             <Head>
                 <title>{pageInfo}</title>        
             </Head>
-            <section className="bg-gray-50 h-screen  overflow-y-auto">
+            <section className="bg-white dark:bg-gray-900 h-screen overflow-y-auto">
                 {children}
             </section>     
         </div>

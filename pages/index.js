@@ -1,12 +1,12 @@
 import React from 'react'
 import HomePage from '../components/pages/HomePage'
-import AuthLayout from '../layouts/AuthLayout'
+import AccountLayout from '../layouts/AccountLayout'
 
 const index = () => {
   return (
-    <AuthLayout pageInfo={`Home | Yaapr`} pageMetaInfo={``}>
+    <AccountLayout pageInfo={`Home | Yaapr`} pageMetaInfo={``}>
        <HomePage />
-    </AuthLayout>
+    </AccountLayout>
   )
 }
 
