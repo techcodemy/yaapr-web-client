@@ -6,7 +6,7 @@ import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
 const MainChatComponent = () => {
     return (
         
-            <ul className="flex-1 bg-gray-50 dark:bg-gray-800 rounded-t-lg p-3 overflow-y-auto">
+            <ul className="flex-1 bg-gray-50 dark:bg-gray-800 rounded-t-lg p-3 chat-box overflow-y-auto">
                 <li className="flex justify-start mt-3">
                     <section className="w-[80%] flex space-x-2">
                         <div className="h-10 w-10 rounded-full">

@@ -128,22 +128,22 @@ const HomePage = () => {
 
 
                                                 </div>
-                                                <div className="flex items-center px-2 mt-3">
+                                                <div className="flex items-center px-2 mt-2">
                                                         <ul className="pr-4 flex w-1/2">
-                                                            <li className="h-9 w-9 -ml-2">
-                                                                <img src="./images/avatar2.jpg" className="h-9 w-9 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                            <li className="h-8 w-8 -ml-2">
+                                                                <img src="./images/avatar2.jpg" className="h-8 w-8 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                             </li>
-                                                            <li className="h-9 w-9 -ml-2">
-                                                                <img src="./images/avatar3.jpg" className="h-9 w-9 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                            <li className="h-8 w-8 -ml-2">
+                                                                <img src="./images/avatar3.jpg" className="h-8 w-8 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                             </li>
-                                                            <li className="h-9 w-9 -ml-2">
-                                                                <img src="./images/avatar2.jpg" className="h-9 w-9 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                            <li className="h-8 w-8 -ml-2">
+                                                                <img src="./images/avatar2.jpg" className="h-8 w-8 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                             </li>
-                                                            <li className="h-9 w-9 -ml-2">
-                                                                <img src="./images/avatar1.jpg" className="h-9 w-9 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                            <li className="h-8 w-8 -ml-2">
+                                                                <img src="./images/avatar1.jpg" className="h-8 w-8 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                             </li>
-                                                            <li className="h-9 w-9 -ml-2">
-                                                                <img src="./images/avatar4.jpg" className="h-9 w-9 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                            <li className="h-8 w-8 -ml-2">
+                                                                <img src="./images/avatar4.jpg" className="h-8 w-8 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                             </li>
                                                         </ul>
                                                         <div className="flex justify-between py-2 w-1/2">

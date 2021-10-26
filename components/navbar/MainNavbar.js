@@ -12,6 +12,7 @@ import OnlineComponent from '../common/OnlineComponent';
 
 
 import { useTheme } from '../../providers/ThemeProvider';
+import Logo from '../Logo';
 
 const MainNavbar = () => {
     const {theme,setActiveTheme} = useTheme()
@@ -20,8 +21,8 @@ const MainNavbar = () => {
         <aside className="h-screen w-[76px] flex-none top-0 sticky">
             <div className="flex flex-col justify-between h-full py-2 bg-white dark:bg-gray-900">
                 <div className="flex justify-center">
-                    <div className="h-11 w-11 rounded-full p-1">
-                        <img src="/yaapr-chat-icon.svg" className="" alt="" />
+                    <div className="h-11 w-11 rounded-full">
+                        <Logo styles={'h-11 w-11'} color={'#6A4CFF'} />
                     </div>
                 </div>
             

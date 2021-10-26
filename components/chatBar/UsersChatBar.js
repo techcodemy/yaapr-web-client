@@ -18,8 +18,8 @@ const UsersChatBar = () => {
                             </span>
                             <input placeholder="Search my chat?" className="pl-10 input--control input--control-noerr " />
                         </div>
-                        <button className="btn btn--primary py-1 px-2 text-sm text-white">
-                            <AddCircleIcon style={{fontSize:20}} />
+                        <button className="btn btn--primary py-[1px] px-2 text-sm text-white">
+                            <AddCircleIcon style={{fontSize:22}} />
                         </button>
                     </div>
                     <div className="px-3 py-2 text-gray-700 dark:text-gray-200 capitalize">

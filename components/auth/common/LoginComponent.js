@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../../Logo'
 import AuthFooter from '../partials/AuthFooter'
 import NotMember from '../partials/NotMember'
 
@@ -9,7 +10,9 @@ const LoginComponent = () => {
                 <section className="p-4">
                     <header className="flex flex-row items-center justify-between">
                         <div className="flex flex-row items-center space-x-3">
-                            <div className="h-10 w-10 bg-primary-base rounded-lg"></div>
+                            <div className="h-10 w-10 rounded-lg">
+                                <Logo styles={'h-9 w-9'} color={'#6A4CFF'} />
+                            </div>
                             <div className="text-2xl font-bold dark:text-white">Yaapr</div>
                         </div>
                         <div className="text font-semibold pr-3 dark:text-white">Log In</div>

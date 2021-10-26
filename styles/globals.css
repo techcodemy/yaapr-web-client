@@ -107,22 +107,16 @@ img {
     @apply: bg-green-400;
     background-color: #68d391;
   }
+  /* // scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
 
-}
+  ::-webkit-scrollbar-track {
+    @apply w-4 bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply w-4 rounded-lg bg-indigo-50 dark:bg-gray-700;
+  }
 
-/* //scrollbar */
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-track {
-  width: 8px;
-  background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1px;
-  width: 8px;
-  background-color: #efefef;
 }

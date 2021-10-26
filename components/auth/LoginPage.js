@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../Logo'
 import LoginComponent from './common/LoginComponent'
 
 const LoginPage = () => {
@@ -8,7 +9,9 @@ const LoginPage = () => {
                 <div className="mx-auto w-3/4 mb-14 pt-20">
                     <div>
                         <div className="flex flex-row space-x-3">
-                            <div className="h-14 w-14 rounded-lg bg-indigo-50"></div>
+                            <div className="h-14 w-14 rounded-lg">
+                                <Logo styles={'h-14 w-14'} color={'#fff'} />
+                            </div>
                             <div className="text-3xl font-bold text-white mt-3">Welcome to Yaapr</div>
                         </div>
                         <h1 className="text-5xl font-bold text-white mt-4">Customer Support </h1>
