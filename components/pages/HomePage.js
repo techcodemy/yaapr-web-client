@@ -94,7 +94,7 @@ const HomePage = () => {
                             </header>
 
                             {companies.map(item => 
-                                <div key={item.id} className="mb-7">
+                                <div key={item.id} className="mb-9">
                                     <div className="">
                                         <div className="flex flex-row space-x-2">
                                             
@@ -102,27 +102,27 @@ const HomePage = () => {
                                                 <img src={`./logos/${item.logo}`} className="h-12 w-12 object-cover rounded-full shadow-sm" alt="" />
                                             </div>
 
-                                            <div className="flex-1 px-3">
-                                                <div className="flex items-center justify-between pb-2">
+                                            <div className="flex-1 px-3 mt-1">
+                                                <div className="flex items-center justify-between ">
                                                     <div className="flex items-start space-x-1">
-                                                        <div className="capitalize text-gray-800 dark:text-white font-semibold">
+                                                        <div className="capitalize text-gray-700 dark:text-white font-semibold">
                                                             {item.name}
                                                         </div>
-                                                        <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-1 uppercase">premium</span>
+                                                        <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-2 uppercase">premium</span>
                                                     </div>
                                                     <span className="text-xs dark:text-gray-200">1 month ago</span>
                                                 </div>
-                                                <div className="flex flex-col justify-between bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg py-2 px-4">
+                                                <div className="flex flex-col justify-between rounded-lg">
                                                     
                                                     <div className="flex-1 flex flex-col mt-1">
-                                                        <div className="font-semibold text-xl text-gray-400 ">
+                                                        <div className="text-xl text-gray-700 dark:text-indigo-50 ">
                                                             Why you should make an FAQ page?
                                                         </div>
-                                                        <div className="mt-1 text-sm h-16 relative overflow-hidden dark:text-gray-50">
+                                                        <div className="mt-1 text-black text-sm h-16 relative overflow-hidden dark:text-gray-50">
                                                             An FAQ page is a time-saving customer service tactic that provides the most commonly asked questions and answers for current or potential customers. 
 
                                                             Before diving into how to make an FAQ page, you need to know why having one is so important. There are so many reasons beyond improving the customer experience for perfecting your FAQ page. Keep in mind the importance of an FAQ page when developing your own e-commerce website so you can make sure it increases sales and not the other way around.
-                                                            <div className="bg-gradient-to-t from-gray-50 dark:from-gray-800 h-1/2 absolute bottom-0 right-0 left-0"></div>
+                                                            <div className="bg-gradient-to-t from-white dark:from-gray-900 h-1/2 absolute bottom-0 right-0 left-0"></div>
                                                         </div>
                                                     </div>
 
