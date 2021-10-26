@@ -2,21 +2,28 @@ import React from 'react'
 import OnlineComponent from '../common/OnlineComponent'
 
 import AddIcon from '@material-ui/icons/Add';
+import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 const UsersChatBar = () => {
     return (
         <section className="w-[286px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
             <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
-                <div className="h-[84px] flex-col flex-none bg-white dark:bg-gray-900 ">
+                <div className="h-[86px] flex-col flex-none bg-white dark:bg-gray-900 ">
                    
-                    <div className="px-2 pb-1 flex space-x-1">
-                        <input placeholder="Search my chat?" className="input--control input--control-noerr " />
-                        <button className="btn btn--primary py-2 px-2 text-sm text-white">
-                            <AddIcon style={{fontSize:20}} />
+                    <div className="px-2 flex space-x-1">
+                        <div className="relative">
+                            <span className="w-12 h-full absolute flex justify-center items-center">
+                                <SearchRoundedIcon style={{fontSize:22}} className="text-gray-400" />
+                            </span>
+                            <input placeholder="Search my chat?" className="pl-10 input--control input--control-noerr " />
+                        </div>
+                        <button className="btn btn--primary py-1 px-2 text-sm text-white">
+                            <AddCircleIcon style={{fontSize:20}} />
                         </button>
                     </div>
-                    <div className="px-3 py-2 font-semibold  text-gray-700 dark:text-gray-200">
-                        All Chats
+                    <div className="px-3 py-2 text-gray-700 dark:text-gray-200 capitalize">
+                        All Conversations
                     </div>
                 </div>
           
@@ -194,7 +201,7 @@ const UsersChatBar = () => {
                             </div>
                         </li>
                 </ul> 
-                <div className="bg-gradient-to-t from-white dark:from-gray-800 h-12 absolute bottom-0 right-0 left-0"></div>  
+                <div className="bg-gradient-to-t from-white dark:from-gray-900 h-12 absolute bottom-0 right-0 left-0"></div>  
             </div>
         </section> 
     )

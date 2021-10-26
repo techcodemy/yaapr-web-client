@@ -67,7 +67,7 @@ const HomePage = () => {
                 </header>
 
                 <section className="flex px-6 w-full">
-                    <main className="w-full 2xl:w-2/3">
+                    <main className="w-full 2xl:w-3/4">
                         {/* <div className="mt-2 py-4 bg-white rounded-lg border border-gray-100">
                             <ul className="flex flex-row space-x-4 ">
                                 {companies.map(item => 
