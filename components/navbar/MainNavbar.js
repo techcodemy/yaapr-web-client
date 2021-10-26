@@ -4,6 +4,8 @@ import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import ForumIcon from '@material-ui/icons/Forum';
+import ReplyAllIcon from '@material-ui/icons/ReplyAll';
 
 
 import OnlineComponent from '../common/OnlineComponent';
@@ -25,12 +27,12 @@ const MainNavbar = () => {
                     <ul className="flex flex-col space-y-2 justify-center">
                         <li className="flex justify-center">
                             <div className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
-                                <HomeRoundedIcon style={{fontSize:24}} />
+                                <ForumIcon style={{fontSize:24}} />
                             </div> 
                         </li>
                         <li className="flex justify-center">
                             <div className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
-                                <HomeRoundedIcon style={{fontSize:24}} />
+                                <ReplyAllIcon style={{fontSize:24}} />
                             </div> 
                         </li>
                         <li className="flex justify-center">
@@ -60,7 +62,7 @@ const MainNavbar = () => {
                 </nav>
                 
                 <section className="flex justify-center">
-                    <div className="h-11 w-11 bg-gray-100 dark:bg-gray-800 border border-gray-100 shadow-sm rounded-full relative cursor-pointer">
+                    <div className="h-11 w-11 bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-900 shadow-sm rounded-full relative cursor-pointer">
                         <div className="p-2">
                             <img src="./images/blank-avatar.png" alt="" />
                         </div>

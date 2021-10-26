@@ -5,6 +5,7 @@ import AttachmentIcon from '@material-ui/icons/Attachment';
 import ImageIcon from '@material-ui/icons/Image';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import OnlineComponent from '../common/OnlineComponent';
+import CopyRightFooter from '../common/CopyRightFooter';
 
 const SidebarComponent = () => {
     const nowDate = new Date().getFullYear()
@@ -27,7 +28,7 @@ const SidebarComponent = () => {
 
                     <div className="px-3">
                         <header className="py-3">
-                            <div className="text-purple-50">Attachments</div>
+                            <div className="text-gray-400 dark:text-purple-50 ">Attachments</div>
                         </header>
                         <div>
                             <ul className="flex flex-col space-y-2">
@@ -80,14 +81,7 @@ const SidebarComponent = () => {
                     </div>
                 </section>
 
-               <section className="pb-3 px-3 border-t border-gray-100 dark:border-gray-800">
-                    <div className="flex items-center justify-between pt-2">
-                        <a href="" className="text-sm hover:underline dark:text-indigo-100">Terms of Use</a>
-                        <a href="" className="text-sm hover:underline dark:text-indigo-100">Pricing</a>
-                        <a href="" className="text-sm hover:underline dark:text-indigo-100">Contact</a>
-                    </div>
-                    <div className="text-xs mt-1 dark:text-indigo-100">Yaapr &copy; {nowDate}. Yaapr Technologies Ltd</div>
-               </section>
+               <CopyRightFooter />
 
             </aside>
     )

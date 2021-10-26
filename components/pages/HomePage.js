@@ -10,6 +10,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
 import Link from 'next/link'
 import WhoToFollow from '../rightBar/WhoToFollow';
+import SubNavbar from '../navbar/SubNavbar';
 
 const companies = [
     {
@@ -50,13 +51,13 @@ const HomePage = () => {
             <UsersChatBar />
             <section className="flex-1 flex flex-col">
 
-                <header className="flex w-full top-0 sticky z-10 bg-white dark:bg-gray-900 px-6 py-[10px] border-b border-gray-100 dark:border-gray-800">
+                <header className="flex w-full top-0 sticky z-10 bg-white dark:bg-gray-900 px-6 py-2">
                     <div className="flex-1 relative">
                         <form className="relative">
                             <span className="w-12 h-full absolute flex justify-center items-center">
                                 <SearchRoundedIcon style={{fontSize:22}} className="text-gray-400" />
                             </span>
-                            <input className="pl-10 input--control input--control-noerr" placeholder="Search" />
+                            <input className="pl-10 input--control input--control-noerr" placeholder="Search for FAQs..." />
                         </form>
                       
                     </div>
@@ -100,17 +101,19 @@ const HomePage = () => {
                                             <div className="w-12 flex-none">
                                                 <img src={`./logos/${item.logo}`} className="h-12 w-12 object-cover rounded-full shadow-sm" alt="" />
                                             </div>
-                                            <div className="flex-1">
-                                                <div className="flex flex-col justify-between bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg py-2 px-4">
-                                                    <div className="flex items-center justify-between">
-                                                        <div className="flex items-start space-x-1">
-                                                            <div className="capitalize text-gray-800 dark:text-white font-semibold">
-                                                                {item.name}
-                                                            </div>
-                                                            <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-1 uppercase">premium</span>
+
+                                            <div className="flex-1 px-3">
+                                                <div className="flex items-center justify-between pb-2">
+                                                    <div className="flex items-start space-x-1">
+                                                        <div className="capitalize text-gray-800 dark:text-white font-semibold">
+                                                            {item.name}
                                                         </div>
-                                                        <span className="text-xs dark:text-gray-200">1 month ago</span>
+                                                        <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-1 uppercase">premium</span>
                                                     </div>
+                                                    <span className="text-xs dark:text-gray-200">1 month ago</span>
+                                                </div>
+                                                <div className="flex flex-col justify-between bg-gray-50 dark:bg-gray-800 shadow-sm rounded-lg py-2 px-4">
+                                                    
                                                     <div className="flex-1 flex flex-col mt-1">
                                                         <div className="font-semibold text-xl text-gray-400 ">
                                                             Why you should make an FAQ page?

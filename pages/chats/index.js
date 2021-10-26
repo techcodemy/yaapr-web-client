@@ -1,10 +1,12 @@
 import React from 'react'
+import AllChatsPage from '../../components/pages/AllChatsPage'
+import AccountLayout from '../../layouts/AccountLayout'
 
 const index = () => {
     return (
-        <div>
-            hello chats
-        </div>
+        <AccountLayout pageInfo={`Home | Yaapr`} pageMetaInfo={``} >
+            <AllChatsPage />
+        </AccountLayout>
     )
 }
 

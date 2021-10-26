@@ -1,11 +1,12 @@
 import React from 'react'
+import CopyRightFooter from '../common/CopyRightFooter'
 import OnlineComponent from '../common/OnlineComponent'
 
 const WhoToFollow = () => {
     return (
        
         <aside className="w-64 flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
+            <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
                 <div className="h-16 flex-none py-2">
                     <div className="px-3 flex flex-col">
                         <span className="font-semibold text-gray-700 dark:text-gray-200">Popular Providers</span>
@@ -13,9 +14,9 @@ const WhoToFollow = () => {
                     </div>
                 </div>
           
-                <ul className="h-full overflow-y-auto pb-4 border-t border-gray-100 dark:border-gray-900">
+                <ul className="h-full overflow-y-auto pb-4 relative">
                     {[1,2,3,5,6,7,8].map(item => 
-                        <li key={item} className="border-b border-gray-100 dark:border-gray-900">
+                        <li key={item} className="">
                             <div className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                     <img src="/logos/fnb.jpg" className="h-10 w-10 rounded-full shadow-sm object-cover" alt="" />
@@ -58,9 +59,9 @@ const WhoToFollow = () => {
                             </div>
                         </li>
                     )}
-                   
+                    <li className="bg-gradient-to-t from-white dark:from-gray-900 h-12 absolute bottom-0 right-0 left-0"></li>  
                 </ul> 
-                <div className="bg-gradient-to-t from-white dark:from-gray-800 h-12 absolute bottom-0 right-0 left-0"></div>  
+                <CopyRightFooter />
             </div>            
         </aside>
        

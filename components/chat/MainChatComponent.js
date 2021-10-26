@@ -5,8 +5,8 @@ import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
 
 const MainChatComponent = () => {
     return (
-      
-            <ul className="flex-1 bg-gray-50 dark:bg-gray-800 p-3 overflow-y-auto">
+        
+            <ul className="flex-1 bg-gray-50 dark:bg-gray-800 rounded-t-lg p-3 overflow-y-auto">
                 <li className="flex justify-start mt-3">
                     <section className="w-[80%] flex space-x-2">
                         <div className="h-10 w-10 rounded-full">
@@ -78,11 +78,13 @@ const MainChatComponent = () => {
                             {/* <div className="bg-primary-base text-white rounded-lg rounded-br-none text-sm p-2 shadow-md"> */}
                            
                             <div className="flex justify-end ">
-                                <div className="w-1/2 grid grid-cols-2 gap-1 bg-primary-base text-white rounded-lg rounded-br-none text-sm p-2 shadow-md">
-                                    <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover rounded-lg" />
-                                    <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover rounded-lg" />
-                                    <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover rounded-lg" />
-                                    <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover rounded-lg" />
+                                <div className="w-1/2  bg-primary-base text-white rounded-lg rounded-br-none text-sm p-2 shadow-md ">
+                                    <div className="grid grid-cols-2 gap-1 rounded-lg overflow-hidden">
+                                        <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover" />
+                                        <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover" />
+                                        <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover" />
+                                        <img src="/images/avatar1.jpg" className="col-span-1 shadow-md object-cover" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

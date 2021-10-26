@@ -4,24 +4,26 @@ import OnlineComponent from '../common/OnlineComponent'
 const UsersChatBar = () => {
     return (
         <section className="w-[286px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
-                <div className="h-[84px] flex-none">
+            <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
+                <div className="h-[98px] flex-none bg-white dark:bg-gray-900 ">
                    
-                    <div className="">
-                        <input placeholder="Search my chat?" className="text-sm input--control input--control-noerr shadow-sm" />
+                    <div className="px-2 pb-1">
+                        <input placeholder="Search my chat?" className="xp-3 input--control input--control-noerr" />
                     </div>
-                    <div className="px-3 py-2 font-semibold border-b border-gray-100 dark:border-gray-900 text-gray-700 dark:text-gray-200">
-                        Current Chats
+                    <div className="px-3 py-2 font-semibold  text-gray-700 dark:text-gray-200">
+                        All Chats
                     </div>
                 </div>
           
-                <ul className="h-full overflow-y-auto pb-4">
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+                <ul className="h-full overflow-y-auto pb-4 px-2">
+
+                    <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                         <div className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white dark:bg-gray-900 items-center rounded-full flex-none relative">
                                 <img src="/images/avatar4.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
                                 <OnlineComponent isOnlineState={true} />
                             </div>
+
                             <div className="">
                                 <div className="flex items-center justify-between">
                                         <div className="flex space-x-1 items-center">
@@ -42,9 +44,11 @@ const UsersChatBar = () => {
                                     <span className="text-xs capitalize text-gray-500 dark:text-gray-300">sales team</span>
                                 </div>
                             </div>
+                            
                         </div>
                     </li>
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+
+                    <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                         <div className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                 <img src="/images/avatar1.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
@@ -66,7 +70,8 @@ const UsersChatBar = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+
+                    <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                         <div className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                 <img src="/images/avatar5.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
@@ -88,7 +93,8 @@ const UsersChatBar = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+
+                    <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                         <div className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                 <img src="/images/avatar4.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
@@ -110,7 +116,8 @@ const UsersChatBar = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+
+                    <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                         <div className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                 <img src="/images/avatar1.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
@@ -134,7 +141,7 @@ const UsersChatBar = () => {
                         </div>
                     </li>
                     {[1,2,3,5,6,7,8].map(item => 
-                        <li key={item} className="border-b border-gray-100 dark:border-gray-900">
+                        <li key={item} className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
                             <div className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
                                     <img src="/images/avatar5.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
@@ -158,7 +165,7 @@ const UsersChatBar = () => {
                             </div>
                         </li>
                     )}
-                    <li className="border-b border-gray-100 dark:border-gray-900">
+                    <li className="">
                             <div className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white dark:bg-gray-900 items-center rounded-full flex-none relative">
                                     <img src="/images/avatar5.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />

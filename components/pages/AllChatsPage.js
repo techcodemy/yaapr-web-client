@@ -1,14 +1,8 @@
 import React from 'react'
-import MainChatComponent from '../chat/MainChatComponent'
-import FormChatComponent from '../chat/FormChatComponent'
-import UsersChatBar from '../chatBar/UsersChatBar'
 import SidebarComponent from '../chat/SidebarComponent'
+import UsersChatBar from '../chatBar/UsersChatBar'
 
-import DeleteIcon from '@material-ui/icons/Delete';
-
-
-const SingleChatPage = () => {
-   
+const AllChatsPage = () => {
     return (
         <main className="flex flex-row w-full">
             <UsersChatBar />
@@ -27,13 +21,10 @@ const SingleChatPage = () => {
 
                                
                             </div>
-                            <button className="h-12 w-12 flex justify-center items-center dark:text-indigo-50">
-                                <DeleteIcon  style={{fontSize:23}}/>
-                            </button>
+                           
                         </div>
                     </header>
-                    <MainChatComponent />
-                    <FormChatComponent />
+                    <div>Hello Chats</div>
                 </main>
             </section>
             
@@ -45,4 +36,4 @@ const SingleChatPage = () => {
     )
 }
 
-export default SingleChatPage
+export default AllChatsPage
