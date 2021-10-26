@@ -1,14 +1,19 @@
 import React from 'react'
 import OnlineComponent from '../common/OnlineComponent'
 
+import AddIcon from '@material-ui/icons/Add';
+
 const UsersChatBar = () => {
     return (
         <section className="w-[286px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
             <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
-                <div className="h-[98px] flex-none bg-white dark:bg-gray-900 ">
+                <div className="h-[84px] flex-col flex-none bg-white dark:bg-gray-900 ">
                    
-                    <div className="px-2 pb-1">
-                        <input placeholder="Search my chat?" className="xp-3 input--control input--control-noerr" />
+                    <div className="px-2 pb-1 flex space-x-1">
+                        <input placeholder="Search my chat?" className="input--control input--control-noerr " />
+                        <button className="btn btn--primary py-2 px-2 text-sm text-white">
+                            <AddIcon style={{fontSize:20}} />
+                        </button>
                     </div>
                     <div className="px-3 py-2 font-semibold  text-gray-700 dark:text-gray-200">
                         All Chats
@@ -44,7 +49,7 @@ const UsersChatBar = () => {
                                     <span className="text-xs capitalize text-gray-500 dark:text-gray-300">sales team</span>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </li>
 
