@@ -1,10 +1,11 @@
 import React from 'react'
+import CompanyViewPage from '../../components/pages/CompanyViewPage'
 import AccountLayout from '../../layouts/AccountLayout'
 
 const index = ({companySlug}) => {
     return (
         <AccountLayout pageInfo={`${companySlug}'s Profile Page' | Yaapr`} pageMetaInfo={''}>
-            hello {companySlug}
+            <CompanyViewPage />
         </AccountLayout>
     )
 }
