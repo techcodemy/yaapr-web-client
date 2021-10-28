@@ -11,6 +11,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import Link from 'next/link'
 import WhoToFollow from '../rightBar/WhoToFollow';
 import SubNavbar from '../navbar/SubNavbar';
+import UserWrapper from '../wrappers/UserWrapper';
 
 const companies = [
     {
