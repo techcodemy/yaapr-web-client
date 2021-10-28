@@ -38,9 +38,7 @@ const SingleChatPage = () => {
             </section>
             
             <SidebarComponent />
-            
-            
-
+        
         </main>
     )
 }

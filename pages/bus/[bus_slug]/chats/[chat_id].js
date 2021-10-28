@@ -1,14 +1,16 @@
 import React from 'react'
-import AccountLayout from '../../layouts/AccountLayout'
-import BusinessHomePage from '../../components/pages/BusinessHomePage'
+import BusinessSingleChatPage from '../../../../components/pages/BusinessSingleChatPage'
+import AccountLayout from '../../../../layouts/AccountLayout'
 
-const CompanyAccount = ({businessSlug}) => {
+
+const BusinessSingleChat = ({businessSlug}) => {
     return (
         <AccountLayout pageInfo={`${businessSlug}'s Account' | Yaapr`} pageMetaInfo={''}>
-           <BusinessHomePage />
+            <BusinessSingleChatPage />
         </AccountLayout>
     )
 }
+
 
 export const getServerSideProps = async (ctx) => {
     console.log(ctx.query.bus_slug)
@@ -20,4 +22,4 @@ export const getServerSideProps = async (ctx) => {
 }
 
 
-export default CompanyAccount
+export default BusinessSingleChat

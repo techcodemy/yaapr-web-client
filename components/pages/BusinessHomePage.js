@@ -46,7 +46,7 @@ const companies = [
 
 const BusinessHomePage = () => {
     return (
-        <BusinessWrapper>
+        <BusinessWrapper showSearch={true}>
             <div className="mt-2 w-full 2xl:w-3/4">
                 <div className="mt-2 mb-4">
                     <div className="flex flex-row space-x-2">
