@@ -43,7 +43,7 @@ const BusinessChatBar = ({showChatBar}) => {
                                     <div className="flex items-center justify-between">
                                             <div className="flex space-x-1 items-center">
                                                 <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  
-                                                <span className="text-xxxs bg-yellow-50 dark:bg-indigo-700 px-1 rounded-lg text-yellow-500  dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                                
                                             </div>
                                             <span className="bg-red-600 px-1 text-xs rounded text-white">
                                                 2
@@ -75,7 +75,7 @@ const BusinessChatBar = ({showChatBar}) => {
                             </div>
                             <div className="">
                                 <div className="flex space-x-1 items-center">
-                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div> <span className="text-xxxs bg-indigo-100 dark:bg-indigo-700 px-1 rounded-lg text-indigo-500 dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div> 
                                 </div>
                                 <div className="truncate-1-lines leading-tight text-sm tracking-tight dark:text-white">
                                     hey, how do i change my fnb atm card pin
@@ -102,7 +102,7 @@ const BusinessChatBar = ({showChatBar}) => {
                             </div>
                             <div className="">
                                 <div className="flex space-x-1 items-center">
-                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  <span className="text-xxxs bg-indigo-100 dark:bg-indigo-700 px-1 rounded-lg text-indigo-500 dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  
                                 </div>
                                 <div className="truncate-1-lines leading-tight text-sm tracking-tight dark:text-white">
                                     hey, how do i change my fnb atm card pin
@@ -129,7 +129,7 @@ const BusinessChatBar = ({showChatBar}) => {
                             </div>
                             <div className="">
                                 <div className="flex space-x-1 items-center">
-                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  <span className="text-xxxs bg-indigo-100 dark:bg-indigo-700 px-1 rounded-lg text-indigo-500 dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                    <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  
                                 </div>
                                 <div className="truncate-1-lines leading-tight text-sm tracking-tight dark:text-white">
                                     hey, how do i change my fnb atm card pin
@@ -157,7 +157,7 @@ const BusinessChatBar = ({showChatBar}) => {
                             <div className="">
                                 <div className="flex space-x-1 items-center">
                                     <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div> 
-                                    <span className="text-xxxs bg-indigo-100 dark:bg-indigo-700 px-1 rounded-lg text-indigo-500 dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                    
                                 </div>
                                 <div className="truncate-1-lines leading-tight text-sm tracking-tight dark:text-white">
                                     hey, how do i change my fnb atm card pin
@@ -185,7 +185,7 @@ const BusinessChatBar = ({showChatBar}) => {
                                 <div className="">
                                     <div className="flex space-x-1 items-center">
                                         <div className="text-gray-800 dark:text-gray-50 text-sm font-semibold">Naoh Tembo</div>  
-                                        <span className="text-xxxs bg-indigo-100 dark:bg-indigo-700 px-1 rounded-lg text-indigo-500 dark:text-white capitalize font-semibold">Fnb Zambia</span>
+                                        
                                     </div>
                                     <div className="truncate-1-lines leading-tight text-sm tracking-tight dark:text-white">
                                         hey, how do i change my fnb atm card pin
