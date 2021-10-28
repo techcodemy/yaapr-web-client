@@ -60,7 +60,7 @@ const CompanyNavbar = () => {
                             </Link>
                         </li>
                         <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg ">
-                            <Link href={`/bus/${router.query.bus_slug}/members`}>
+                            <Link href={`/bus/${router.query.bus_slug}/subscriptions`}>
                                 <a className="py-2 flex group items-center">
                                 <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-200 group-hover:text-gray-700">
                                     <SupervisorAccountOutlinedIcon style={{fontSize:20}}/>
