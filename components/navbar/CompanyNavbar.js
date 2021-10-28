@@ -1,11 +1,16 @@
 import React from 'react'
+import Link from 'next/link'
 
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineOutlined';
 import SupervisorAccountOutlinedIcon from '@material-ui/icons/SupervisorAccountOutlined';
 import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
+import { useRouter } from 'next/router';
 
 const CompanyNavbar = () => {
+
+    const router = useRouter()
+
     return (
         <aside className="w-[220px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
             <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col justify-between h-full">
@@ -24,38 +29,46 @@ const CompanyNavbar = () => {
                     </header>
                     <ul className="flex-1 flex flex-col my-3 bg-gray-50 dark:bg-gray-800 rounded-lg p-2">
                         <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900 cursor-pointer rounded-lg ">
-                            <a href="#" className="py-2 flex group items-center">
-                                <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
-                                    <HomeOutlinedIcon style={{fontSize:20}} />
-                                </span>
-                                <span className="dark:text-indigo-50">Home</span>
-                            </a>
+                            <Link href={`/bus/${router.query.bus_slug}`}>
+                                <a href="#" className="py-2 flex group items-center">
+                                    <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
+                                        <HomeOutlinedIcon style={{fontSize:20}} />
+                                    </span>
+                                    <span className="dark:text-indigo-50">Home</span>
+                                </a>
+                            </Link>
                         </li>
                         <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg ">
-                            <a href="#" className="py-2 flex group items-center">
-                                <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
-                                    <ChatBubbleOutlineOutlinedIcon style={{fontSize:20}} />
-                                </span>
-                                <span className="dark:text-indigo-50">All Chats</span>
-                            </a>
+                            <Link href={`/bus/${router.query.bus_slug}/chats`}>
+                                <a className="py-2 flex group items-center">
+                                    <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
+                                        <ChatBubbleOutlineOutlinedIcon style={{fontSize:20}} />
+                                    </span>
+                                    <span className="dark:text-indigo-50">All Chats</span>
+                                </a>
+                            </Link>
                         </li>
                         <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg ">
-                            <a href="#" className="py-2 flex group items-center">
+                            <Link href={`/bus/${router.query.bus_slug}/members`}>
+                                <a className="py-2 flex group items-center">
                                 <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
                                     <SupervisorAccountOutlinedIcon style={{fontSize:20}}/>
                                 </span>
                                 <span className="dark:text-indigo-50">Members</span>
-                            </a>
+                                </a>
+                            </Link>
                         </li>
                         <li className="border-t border-gray-100 dark:border-gray-900 my-1"></li>
 
                         <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg ">
-                        <a href="#" className="py-2 flex group items-center">
+                            <Link href={`/bus/${router.query.bus_slug}/settings`}>
+                                <a className="py-2 flex group items-center">
                                 <span className="w-10 text-center text-gray-400 dark:text-indigo-500 dark:group-hover:text-indigo-700 group-hover:text-gray-700">
                                     <SettingsOutlinedIcon style={{fontSize:20}}/>
                                 </span>
                                 <span className="dark:text-indigo-50">Settings</span>
-                            </a>
+                                </a>
+                            </Link>
                         </li>
                         
                     </ul>

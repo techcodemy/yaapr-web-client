@@ -9,9 +9,9 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 const BusinessSingleChatPage = () => {
     return (
-        <BusinessWrapper showSearch={false}>
+        <BusinessWrapper showSearch={false} showRightBar={false}>
             <main className="flex flex-row">
-                <BusinessChatBar />
+                <BusinessChatBar showChatBar={false} />
                 <section className="flex-1 flex flex-col h-screen pt-2 px-3">
                     <main className="flex flex-col h-full">
                         <header className="h-16 rounded-t-lg  flex-none bg-white dark:bg-gray-900 px-3">

@@ -4,9 +4,9 @@ import BusinessWrapper from '../wrappers/BusinessWrapper'
 
 const BusinessAllChatsPage = () => {
     return (
-        <BusinessWrapper showSearch={false}>
+        <BusinessWrapper showSearch={false} showRightBar={true}>
             <main className="flex">
-                <BusinessChatBar />
+                <BusinessChatBar showChatBar={true}/>
                 <div>Hello Chats</div>
             </main>
         </BusinessWrapper>

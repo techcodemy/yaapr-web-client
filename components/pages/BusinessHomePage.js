@@ -1,8 +1,6 @@
 import React from 'react'
 import SingleFaqPost from '../common/SingleFaqPost'
 import BusinessWrapper from '../wrappers/BusinessWrapper'
-import ImageIcon from '@material-ui/icons/Image';
-import AddIcon from '@material-ui/icons/Add';
 
 const companies = [
     {
@@ -46,7 +44,7 @@ const companies = [
 
 const BusinessHomePage = () => {
     return (
-        <BusinessWrapper showSearch={true}>
+        <BusinessWrapper showSearch={true} showRightBar={true}>
             <div className="mt-2 w-full 2xl:w-3/4">
                 <div className="mt-2 mb-4">
                     <div className="flex flex-row space-x-2">

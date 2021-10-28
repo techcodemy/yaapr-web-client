@@ -6,7 +6,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import CompanyNavbar from '../navbar/CompanyNavbar';
 
 
-const BusinessWrapper = ({children,showSearch}) => {
+const BusinessWrapper = ({children,showSearch,showRightBar}) => {
 
     return (
         <main className="flex flex-row w-full">
@@ -36,7 +36,9 @@ const BusinessWrapper = ({children,showSearch}) => {
                 </section>
 
             </section>
-           {/*  <WhoToFollow /> */}
+            {showRightBar && 
+                <WhoToFollow />
+            }
         </main>
     )
 }
