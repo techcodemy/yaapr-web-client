@@ -81,6 +81,7 @@ module.exports = {
     },
   },
   variants: {
+    aspectRatio: ['responsive', 'hover'],
     extend: {},
   },
   plugins: [

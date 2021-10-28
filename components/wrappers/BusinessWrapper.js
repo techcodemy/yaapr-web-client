@@ -3,11 +3,14 @@ import UsersChatBar from '../chatBar/UsersChatBar'
 import WhoToFollow from '../rightBar/WhoToFollow'
 
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import CompanyNavbar from '../navbar/CompanyNavbar';
 
-const UserWrapper = ({children}) => {
+
+const BusinessWrapper = ({children}) => {
     return (
         <main className="flex flex-row w-full">
-            <UsersChatBar />
+            <CompanyNavbar />
+
             <section className="flex-1 flex flex-col">
 
                 <header className="flex w-full top-0 sticky z-10 bg-white dark:bg-gray-900 px-6 py-2">
@@ -26,7 +29,7 @@ const UserWrapper = ({children}) => {
                 </header>
 
                 <section className="flex px-6 w-full">
-                {children}
+                    {children}
                 </section>
 
             </section>
@@ -35,4 +38,4 @@ const UserWrapper = ({children}) => {
     )
 }
 
-export default UserWrapper
+export default BusinessWrapper

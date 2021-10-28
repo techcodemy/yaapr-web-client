@@ -22,7 +22,7 @@ const UsersChatBar = () => {
                             <AddCircleIcon style={{fontSize:22}} />
                         </button>
                     </div>
-                    <div className="px-3 py-2 text-gray-700 dark:text-gray-200 capitalize">
+                    <div className="p-3 text-gray-700 dark:text-gray-200 capitalize">
                         All Conversations
                     </div>
                 </div>
@@ -180,7 +180,7 @@ const UsersChatBar = () => {
                     <li className="">
                             <div className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white dark:bg-gray-900 items-center rounded-full flex-none relative">
-                                    <img src="/images/avatar5.jpg" className="h-10 w-10 rounded-full shadow-sm" alt="" />
+                                    <img src="/images/avatar5.jpg" className="h-10 w-10 rounded-full shadow-sm border dark:border-gray-50 dark:border-gray-800 " alt="" />
                                     <OnlineComponent isOnlineState={true}  />
                                 </div>
                                 <div className="">
