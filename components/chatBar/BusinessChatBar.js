@@ -6,7 +6,7 @@ import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 
 const BusinessChatBar = () => {
     return (
-        <section className="w-[286px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
+        <section className="hidden 2xl:flex  w-[286px] flex-none h-screen top-0 sticky bg-white dark:bg-gray-900 py-2 overflow-hidden">
             <div className="bg-white dark:bg-gray-900 rounded-lg relative flex flex-col h-screen overflow-y-auto">
                 <div className="h-[86px] flex-col flex-none bg-white dark:bg-gray-900 ">
                    

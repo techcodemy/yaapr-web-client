@@ -21,7 +21,7 @@ const BusinessSingleChatPage = () => {
                                         <img src="/images/avatar2.jpg" className="h-10 w-10 object-cover rounded-full" alt="" />
                                         <div className="flex flex-col">
                                             <div className="capitalize dark:text-indigo-50"> Peter Chibwe </div>
-                                            <div className="text-xs dark:text-indigo-100">Sales Dept</div>
+                                            <div className="text-xs dark:text-indigo-100">Started @2hours</div>
                                         </div>
                                     </div>
 
