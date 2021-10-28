@@ -3,15 +3,9 @@ import UsersChatBar from '../chatBar/UsersChatBar'
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 
 import Link from 'next/link'
-<<<<<<< HEAD
-import WhoToFollow from '../rightBar/WhoToFollow';
-import SubNavbar from '../navbar/SubNavbar';
-import UserWrapper from '../wrappers/UserWrapper';
-=======
 
 import UserWrapper from '../wrappers/UserWrapper'
 import SingleFaqPost from '../common/SingleFaqPost';
->>>>>>> de0c90101a41e03f381c1772c3524ac03fb59170
 
 const companies = [
     {

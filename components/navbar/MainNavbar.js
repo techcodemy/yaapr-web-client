@@ -1,6 +1,6 @@
 import React from 'react'
+import Link from 'next/link'
 
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
@@ -9,10 +9,10 @@ import ReplyAllIcon from '@material-ui/icons/ReplyAll';
 
 
 import OnlineComponent from '../common/OnlineComponent';
-
+import Logo from '../Logo';
 
 import { useTheme } from '../../providers/ThemeProvider';
-import Logo from '../Logo';
+
 
 const MainNavbar = () => {
     const {theme,setActiveTheme} = useTheme()
@@ -21,9 +21,11 @@ const MainNavbar = () => {
         <aside className="h-screen w-[76px] flex-none top-0 sticky">
             <div className="flex flex-col justify-between h-full py-2 bg-white dark:bg-gray-900">
                 <div className="flex justify-center">
-                    <div className="h-11 w-11 rounded-full">
-                        <Logo styles={'h-11 w-11'} color={'#6A4CFF'} />
-                    </div>
+                    <Link href={`/`}>
+                        <a className="h-11 w-11 rounded-full">
+                            <Logo styles={'h-11 w-11'} color={'#6A4CFF'} />
+                        </a>
+                    </Link>
                 </div>
             
                 <nav className="flex-1 w-full mt-3">
@@ -52,9 +54,11 @@ const MainNavbar = () => {
                         <li className="border-t-[0.5px] border-gray-100 dark:border-gray-800"></li>
 
                         <li className="flex justify-center">
-                            <div className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
-                                <img src="/images/avatar2.jpg" className="shadow-sm object-cover h-11 w-11 rounded-full" alt="" />
-                            </div> 
+                            <Link href={`/bus/airtel-zambia`}>
+                                <a className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
+                                    <img src="/logos/fnb.jpg" className="shadow-sm object-cover h-11 w-11 rounded-full" alt="" />
+                                </a> 
+                            </Link>
                         </li>
                         <li className="flex justify-center">
                             <div className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
