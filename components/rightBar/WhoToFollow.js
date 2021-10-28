@@ -34,22 +34,22 @@ const WhoToFollow = () => {
                                         </div>
                                     <ul className="pl-1 flex mt-1">
                                             <li className="h-7 w-7 -ml-2 relative">
-                                                <img src="./images/avatar2.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                <img src="/images/avatar2.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                 <OnlineComponent isOnlineState={true} />
                                             </li>
                                             <li className="h-7 w-7 -ml-2 relative">
-                                                <img src="./images/avatar3.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                <img src="/images/avatar3.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                             </li>
                                             <li className="h-7 w-7 -ml-2 relative">
-                                                <img src="./images/avatar2.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                <img src="/images/avatar2.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                 <OnlineComponent isOnlineState={true} />
                                             </li>
                                             <li className="h-7 w-7 -ml-2 relative">
-                                                <img src="./images/avatar1.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                <img src="/images/avatar1.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                                 <OnlineComponent isOnlineState={true} />
                                             </li>
                                             <li className="h-7 w-7 -ml-2 relative">
-                                                <img src="./images/avatar4.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
+                                                <img src="/images/avatar4.jpg" className="h-7 w-7 rounded-full object-cover border-2 border-gray-50 dark:border-gray-800" alt="" />
                                             </li>
                                         </ul>
                                    </div>
