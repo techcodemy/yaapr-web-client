@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 import OnlineComponent from '../common/OnlineComponent'
 
-import AddIcon from '@material-ui/icons/Add';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 

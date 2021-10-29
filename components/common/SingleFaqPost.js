@@ -1,7 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
 import ThumbDownAltOutlinedIcon from '@material-ui/icons/ThumbDownAltOutlined';
-import ThumbUpOutlinedIcon from '@material-ui/icons/ThumbUpOutlined';
 import ReplyAllRoundedIcon from '@material-ui/icons/ReplyAllRounded';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
@@ -19,12 +19,16 @@ const SingleFaqPost = ({item,isOwner}) => {
 
                     <div className="flex-1 px-3 mt-1">
                         <div className="flex items-center justify-between ">
-                            <div className="flex items-start space-x-1">
-                                <div className="capitalize text-gray-700 dark:text-white font-semibold">
-                                    {item.name}
-                                </div>
-                                <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-1 uppercase">premium</span>
-                            </div>
+                            
+                            <Link href={`/${item.name}`}>
+                                <a className="flex items-start space-x-1">
+                                    <div className="capitalize text-gray-700 dark:text-white font-semibold">
+                                        {item.name}
+                                    </div>
+                                    <span className="text-yellow-500 bg-yellow-100 font-semibold text-xxxs rounded-lg px-1 mt-1 uppercase">premium</span>
+                                </a>
+                            </Link>
+                            
                             <div className="flex space-x-2 items-center">
                                 <span className="text-xs dark:text-gray-200">1 month ago</span>
                                 <button className="text-sm dark:text-gray-200 hover:underline">Read More</button>
