@@ -1,6 +1,6 @@
 import React from 'react'
 import TermsPage from '../../../components/pages/static/TermsPage'
-import AboutLayout from '../../../layouts/AboutLayout'
+import AboutLayout from '../../../components/layouts/AboutLayout'
 
 const index = () => {
     return (

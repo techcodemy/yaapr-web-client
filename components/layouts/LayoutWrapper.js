@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import useDarkMode from '../hooks/useDarkMode'
 
 import { useRouter } from 'next/router'
 

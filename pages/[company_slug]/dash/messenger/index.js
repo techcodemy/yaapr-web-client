@@ -1,6 +1,6 @@
 import React from 'react'
 import BusinessAllChatsPage from '../../../../components/pages/BusinessAllChatsPage'
-import AccountLayout from '../../../../layouts/AccountLayout'
+import AccountLayout from '../../../../components/layouts/AccountLayout'
 
 
 const index = ({companySlug}) => {

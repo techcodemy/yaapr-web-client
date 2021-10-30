@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Switch } from '@headlessui/react'
-import { useTheme } from '../providers/ThemeProvider'
+import { useTheme } from '../../providers/ThemeProvider'
 
 import LayoutWrapper from './LayoutWrapper'
 

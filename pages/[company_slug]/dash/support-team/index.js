@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import AccountLayout from '../../../../layouts/AccountLayout'
+import AccountLayout from '../../../../components/layouts/AccountLayout'
 import BusinessSupportTeamPage from '../../../../components/pages/BusinessSupportTeamPage'
 
 const index = ({companySlug}) => {

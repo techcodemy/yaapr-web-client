@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutPage from '../../components/pages/static/AboutPage'
-import AboutLayout from '../../layouts/AboutLayout'
+import AboutLayout from '../../components/layouts/AboutLayout'
 
 const index = () => {
     return (

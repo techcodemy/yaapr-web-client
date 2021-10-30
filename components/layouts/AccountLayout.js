@@ -1,5 +1,5 @@
 import React from 'react'
-import MainNavbar from '../components/navbar/mainNavbar'
+import MainNavbar from '../navbar/mainNavbar'
 import LayoutWrapper from './LayoutWrapper'
 
 const AccountLayout = ({children,pageInfo,pageMetaInfo}) => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutFooter from '../components/common/AboutFooter'
-import AboutNavbar from '../components/navbar/AboutNavbar'
+import AboutFooter from '../common/AboutFooter'
+import AboutNavbar from '../navbar/AboutNavbar'
 import LayoutWrapper from './LayoutWrapper'
 
 

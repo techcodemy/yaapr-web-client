@@ -1,6 +1,6 @@
 import React from 'react'
 import BusinessHomePage from '../../../components/pages/BusinessHomePage'
-import AccountLayout from '../../../layouts/AccountLayout'
+import AccountLayout from '../../../components/layouts/AccountLayout'
 
 
 const CompanyAccount = ({companySlug}) => {

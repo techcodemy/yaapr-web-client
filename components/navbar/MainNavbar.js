@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Popover,Transition  } from '@headlessui/react'
 
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 import Brightness2Icon from '@material-ui/icons/Brightness2';
@@ -9,9 +10,10 @@ import ReplyAllIcon from '@material-ui/icons/ReplyAll';
 
 
 import OnlineComponent from '../common/OnlineComponent';
-import Logo from '../Logo';
+
 
 import { useTheme } from '../../providers/ThemeProvider';
+
 
 
 const MainNavbar = () => {
@@ -23,7 +25,8 @@ const MainNavbar = () => {
                 <div className="flex justify-center">
                     <Link href={`/`}>
                         <a className="h-11 w-11 rounded-full">
-                            <Logo styles={'h-11 w-11'} color={'#6A4CFF'} />
+                            {/* <Logo styles={'h-11 w-11'} color={'#6A4CFF'} /> */}
+                            <img src="/yaapr-chat-icon.svg" className="h-11 w-11" alt="/" />
                         </a>
                     </Link>
                 </div>
@@ -69,12 +72,31 @@ const MainNavbar = () => {
                 </nav>
                 
                 <section className="flex justify-center">
-                    <div className="h-11 w-11 bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-900 shadow-sm rounded-full relative cursor-pointer">
-                        <div className="p-2">
-                            <img src="./images/blank-avatar.png" alt="" />
-                        </div>
+                    <Popover className="h-11 w-11 bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-900 shadow-sm rounded-full relative cursor-pointer">
+                        <Transition
+                            enter="transition duration-100 ease-out"
+                            enterFrom="transform scale-95 opacity-0"
+                            enterTo="transform scale-100 opacity-100"
+                            leave="transition duration-75 ease-out"
+                            leaveFrom="transform scale-100 opacity-100"
+                            leaveTo="transform scale-95 opacity-0"
+                        >
+                            {/* <Popover.Panel className="absolute z-10 w-44 h-44 -mt-12">
+                                <div className="grid grid-cols-2 bg-white ">
+                                    <a href="/analytics">Analytics</a>
+                                    <a href="/engagement">Engagement</a>
+                                    <a href="/security">Security</a>
+                                    <a href="/integrations">Integrations</a>
+                                </div>
+                            </Popover.Panel> */}
+                            
+                        </Transition>
+                        <Popover.Button className="p-2">
+                            <img src="/images/blank-avatar.png" alt="" />
+                        </Popover.Button>
                         <OnlineComponent isOnlineState={true} />
-                    </div>
+                        
+                    </Popover>
                 </section>
             </div>
         </aside>

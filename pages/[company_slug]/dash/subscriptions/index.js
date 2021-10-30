@@ -1,7 +1,7 @@
 import React from 'react'
 
 import BusinessSubscriptionsPage from '../../../../components/pages/BusinessSubscriptionsPage'
-import AccountLayout from '../../../../layouts/AccountLayout'
+import AccountLayout from '../../../../components/layouts/AccountLayout'
 
 const index = ({companySlug}) => {
     return (

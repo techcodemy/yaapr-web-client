@@ -1,6 +1,6 @@
 import React from 'react'
 import BusinessSingleChatPage from '../../../../components/pages/BusinessSingleChatPage'
-import AccountLayout from '../../../../layouts/AccountLayout'
+import AccountLayout from '../../../../components/layouts/AccountLayout'
 
 
 const BusinessSingleChat = ({companySlug}) => {

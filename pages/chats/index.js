@@ -1,6 +1,6 @@
 import React from 'react'
 import AllChatsPage from '../../components/pages/AllChatsPage'
-import AccountLayout from '../../layouts/AccountLayout'
+import AccountLayout from '../../components/layouts/AccountLayout'
 
 const index = () => {
     return (
