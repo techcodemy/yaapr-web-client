@@ -3,19 +3,19 @@ import React from 'react'
 import BusinessSubscriptionsPage from '../../../../components/pages/BusinessSubscriptionsPage'
 import AccountLayout from '../../../../layouts/AccountLayout'
 
-const index = ({businessSlug}) => {
+const index = ({companySlug}) => {
     return (
-        <AccountLayout pageInfo={`${businessSlug}'s Account' | Yaapr`} pageMetaInfo={''}>
+        <AccountLayout pageInfo={`${companySlug}'s Account' | Yaapr`} pageMetaInfo={''}>
             <BusinessSubscriptionsPage />
         </AccountLayout>
     )
 }
 
 export const getServerSideProps = async (ctx) => {
-    console.log(ctx.query.bus_slug)
+    console.log(ctx.query.company_slug)
     return {
         props:{
-            businessSlug:ctx.query.bus_slug,
+            companySlug:ctx.query.company_slug,
         }
     }
 }

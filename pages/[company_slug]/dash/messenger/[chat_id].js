@@ -3,9 +3,9 @@ import BusinessSingleChatPage from '../../../../components/pages/BusinessSingleC
 import AccountLayout from '../../../../layouts/AccountLayout'
 
 
-const BusinessSingleChat = ({businessSlug}) => {
+const BusinessSingleChat = ({companySlug}) => {
     return (
-        <AccountLayout pageInfo={`${businessSlug}'s Account' | Yaapr`} pageMetaInfo={''}>
+        <AccountLayout pageInfo={`${companySlug}'s Account' | Yaapr`} pageMetaInfo={''}>
             <BusinessSingleChatPage />
         </AccountLayout>
     )
@@ -13,10 +13,10 @@ const BusinessSingleChat = ({businessSlug}) => {
 
 
 export const getServerSideProps = async (ctx) => {
-    console.log(ctx.query.bus_slug)
+    console.log(ctx.query.company_slug)
     return {
         props:{
-            businessSlug:ctx.query.bus_slug,
+            companySlug:ctx.query.company_slug,
         }
     }
 }

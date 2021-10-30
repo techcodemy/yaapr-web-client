@@ -63,7 +63,7 @@ img {
   }
 
   .btn {
-    @apply transition-all duration-300 shadow-sm rounded-lg font-semibold focus:ring-2 py-[12px];
+    @apply transition-all duration-300 shadow-sm rounded-lg font-semibold focus:ring-2 h-[43px];
   }
 
   .btn:focus {
@@ -73,11 +73,18 @@ img {
   }
 
   .btn--primary{
-    @apply bg-primary-base border border-primary-base opacity-100 hover:opacity-75 text-white;
+    @apply bg-primary-base border border-primary-base hover:border-primary-light opacity-100 hover:bg-primary-light text-white;
   }
 
   .btn--secondary{
-    @apply bg-white hover:bg-gray-100 text-gray-700 border border-gray-700;
+    @apply text-primary-base hover:text-primary-light border border-primary-base hover:border-primary-light;
+  }
+  .btn--danger-secondary{
+    @apply text-red-500 hover:text-red-600 border border-red-500 hover:border-red-600;
+  }
+
+  .btn--danger{
+    @apply bg-red-500 border border-red-500 hover:border-red-600 opacity-100 hover:bg-red-600 text-white;
   }
 
   .input--control {

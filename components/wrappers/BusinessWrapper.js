@@ -1,9 +1,8 @@
 import React from 'react'
-import UsersChatBar from '../chatBar/UsersChatBar'
-import WhoToFollow from '../rightBar/WhoToFollow'
 
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import CompanyNavbar from '../navbar/CompanyNavbar';
+import Followers from '../rightBar/Followers';
 
 
 const BusinessWrapper = ({children,showSearch,showRightBar}) => {
@@ -37,7 +36,7 @@ const BusinessWrapper = ({children,showSearch,showRightBar}) => {
 
             </section>
             {showRightBar && 
-                <WhoToFollow />
+                <Followers />
             }
         </main>
     )
