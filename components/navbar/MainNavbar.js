@@ -57,7 +57,7 @@ const MainNavbar = () => {
                         <li className="border-t-[0.5px] border-gray-100 dark:border-gray-800"></li>
 
                         <li className="flex justify-center">
-                            <Link href={`/bus/airtel-zambia`}>
+                            <Link href={`/airtel-zambia/dash`}>
                                 <a className="h-11 w-11 rounded-full relative bg-gray-100 dark:text-indigo-100 dark:bg-gray-700 cursor-pointer flex flex-col items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm">
                                     <img src="/logos/fnb.jpg" className="shadow-sm object-cover h-11 w-11 rounded-full" alt="" />
                                 </a> 

@@ -31,7 +31,7 @@ const BusinessChatBar = ({showChatBar}) => {
                 <ul className="h-full overflow-y-auto pb-4 px-2">
 
                     <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                        <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                        <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white dark:bg-gray-900 items-center rounded-full flex-none relative">
@@ -66,7 +66,7 @@ const BusinessChatBar = ({showChatBar}) => {
                     </li>
 
                     <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                        <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                        <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
@@ -93,7 +93,7 @@ const BusinessChatBar = ({showChatBar}) => {
                     </li>
 
                     <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                        <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                        <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
@@ -120,7 +120,7 @@ const BusinessChatBar = ({showChatBar}) => {
                     </li>
 
                     <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                        <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                        <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
@@ -147,7 +147,7 @@ const BusinessChatBar = ({showChatBar}) => {
                     </li>
 
                     <li className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                        <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                        <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                             <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
@@ -175,7 +175,7 @@ const BusinessChatBar = ({showChatBar}) => {
                     </li>
                     {[1,2,3,5,6,7,8].map(item => 
                         <li key={item} className="transition duration-500 hover:bg-indigo-50 dark:bg-gray-800 dark:hover:bg-gray-900  cursor-pointer rounded-lg mb-2 bg-gray-50">
-                            <Link href={`/bus/${router.query.bus_slug}/messenger/dkhskfhsjsfjshhd`}>
+                            <Link href={`/${router.query.company_slug}/dash/messenger/dkhskfhsjsfjshhd`}>
                         {/* <Link href={`/bus/${router.query.bus_slug}/chats/`}> */}
                             <a className="flex space-x-2 p-2">
                                 <div className="h-10 w-10 bg-white items-center rounded-full flex-none relative">
